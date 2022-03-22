@@ -1,6 +1,6 @@
 require 'person'
 
-describe 'Attributes' do
+describe 'Attributes', :attributes do
   # before(:each) do
   #   puts 'ANTES DE CADA TESTE'
   #   @person = Person.new

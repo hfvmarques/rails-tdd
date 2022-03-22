@@ -1,6 +1,6 @@
 $count = 0
 
-describe 'let!' do
+describe 'let!', type: 'let' do
   invocation_order = []
 
   let!(:counter) do

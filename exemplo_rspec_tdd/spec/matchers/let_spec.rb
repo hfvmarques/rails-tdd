@@ -1,6 +1,6 @@
 $counter = 0
 
-describe 'let' do
+describe 'let', type: 'let' do
   let(:count) { $counter += 1 }
 
   it 'memorize value' do
