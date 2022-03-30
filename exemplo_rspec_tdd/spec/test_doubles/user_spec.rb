@@ -8,4 +8,17 @@ describe "Test Double" do
     user.name
     user.password
   end
+
+  it 'as_null_object' do
+    user = double('User').as_null_object
+
+    # allow(user).to receive(:name).and_return('Henrique')
+    # allow(user).to receive(:password).and_return('passuordi')
+    allow(user).to receive_messages(name: 'Henrique', password: 'passuordi')
+
+    user.name
+    user.password
+
+    user.abc
+  end
 end
